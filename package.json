@@ -1,0 +1,27 @@
+{
+  "name": "nodejs_graphql_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WaveX-j/nodeJS_graphql_api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WaveX-j/nodeJS_graphql_api/issues"
+  },
+  "homepage": "https://github.com/WaveX-j/nodeJS_graphql_api#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-graphql": "^0.12.0",
+    "fs": "^0.0.1-security",
+    "graphql": "^15.8.0",
+    "graphql-tag": "^2.12.6",
+    "notarealdb": "^0.2.2"
+  }
+}
