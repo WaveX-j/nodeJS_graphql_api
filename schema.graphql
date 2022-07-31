@@ -4,7 +4,7 @@ type Query {
 }
 
 type Mutation {
-    createStudent(name: String, age: Int): Student!,       #Argument does not have ID as we auto-generate to avoid same identifier and ! creates student regardless of same age name
+    createStudent(name: String, age: Int): Student!,       
     deleteStudent(id: ID!): Student,
     updateStudent(id: ID!, name: String, age: Int): Student
 }

@@ -1,4 +1,4 @@
-//importing necessary libraries
+//importing relevant libraries
 
 var express = require('express');              
 var { graphqlHTTP } = require('express-graphql');
@@ -17,9 +17,7 @@ var schema = buildSchema(fs.readFileSync("schema.graphql").toString());  //retur
 
 // The root provides a resolver function for each API endpoint
 var root = {
-//   hello: () => {
-//     return 'Hello world!';
-//   },
+
 listStudents: () => {
     return studentDB.list()
 
@@ -60,7 +58,7 @@ updateStudent: (argument) => {
 
 };
 
-
+//Creating a GraphQL API Server
 
 var app = express();
 app.use('/graphql', graphqlHTTP({
